@@ -145,7 +145,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Technicians</div>
-                      <div class="row no-gutters align-items-center">
+                      
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php
                               include 'db.php'; 
@@ -156,11 +156,9 @@
                               ?></div>
                         </div>
                         <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <!--<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
-                          </div>
+                          
                         </div>
-                      </div>
+                      
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -178,9 +176,9 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1"> Dealers</div>
-                      <div class="row no-gutters align-items-center">
+                      
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 "><?php
                               include 'db.php'; 
                               $result = mysqli_query($conn, "SELECT * FROM users");
                               $count=mysqli_num_rows($result);
@@ -189,11 +187,9 @@
                               ?></div>
                         </div>
                         <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <!--<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
-                          </div>
+                          
                         </div>
-                      </div>
+                      
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>

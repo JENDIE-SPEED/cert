@@ -71,18 +71,7 @@
 .fa {
     font-size: 50px;
 }
-.donut{
-    margin-left: 750px;
-    margin-right: 100px;
-    position: absolute;
-    margin-top: 120px;
-    top: 0;
-      left: 0;
-      width: 120%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-}
+
 .collap{
     margin-left: 750px;
     margin-right: 90px;

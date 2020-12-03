@@ -117,23 +117,7 @@ padding-bottom: 20px;
         <select id="serial" name="install" >
            <option value="" disabled selected>Serial</option>
 
-           <?php
-           $mysqli=New mysqli('localhost','root','','test');
-           $resultSet=$mysqli->query("SELECT serial FROM install");
-   
-
-
-           while($rows=$resultSet->fetch_assoc()){
-
-            $serial = $rows['serial'];
-            echo"<option value=$serial>$serial</option>";
-           } 
-
-           mysqli_close($mysqli);
-
-
-           ?>
-         
+           
         </select>
         
         <select id="service" name="INSATALLATION" >
@@ -158,23 +142,7 @@ padding-bottom: 20px;
         <select id="technician" name="install">
           <option value="" disabled selected> Technician</option>
 
-          <?php
-           $mysqli=New mysqli('localhost','root','','test');
-           $resultSet=$mysqli->query("SELECT technician FROM install");
-   
-
-
-           while($rows=$resultSet->fetch_assoc()){
-
-            $tech = $rows['technician'];
-            echo"<option value=$tech>$tech</option>";
-           } 
-
-           mysqli_close($mysqli);
-
-
-           ?>
-         
+          
          
           
         </select>

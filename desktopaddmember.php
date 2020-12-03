@@ -60,6 +60,8 @@
   <label for="passw">Password</label>
   <div class="col-3">
       <input type="password" class="form-control" id="passw">
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </div>
       
     

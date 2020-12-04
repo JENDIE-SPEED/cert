@@ -24,7 +24,13 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Installation</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800"> 4000</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"> <?php
+                              include 'db.php'; 
+                              $result = mysqli_query($conn, "SELECT * FROM work where problem='INSTALLATION'");
+                              $count=mysqli_num_rows($result);
+                              echo $count;
+                              
+                              ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -40,8 +46,14 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Renewals</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">5,000</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><?php
+                              include 'db.php'; 
+                              $result = mysqli_query($conn, "SELECT * FROM work where problem='RENEWAL'");
+                              $count=mysqli_num_rows($result);
+                              echo $count;
+                              
+                              ?></div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                     <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -60,7 +72,13 @@
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Technician</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php
+                              include 'db.php'; 
+                              $result = mysqli_query($conn, "SELECT * FROM technician");
+                              $count=mysqli_num_rows($result);
+                              echo $count;
+                              
+                              ?></div>
                         </div>
                         
                       </div>
@@ -83,7 +101,13 @@
                       <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Dealers</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php
+                              include 'db.php'; 
+                              $result = mysqli_query($conn, "SELECT * FROM users");
+                              $count=mysqli_num_rows($result);
+                              echo $count;
+                              
+                              ?></div>
                         </div>
                         <div class="col">
                           

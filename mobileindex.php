@@ -13,81 +13,7 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <title>Jendie</title>
 
-    <style type="text/css">
-
-        
-        /*section counter*/
-.container {
-
-    margin-left: 0px;
-    margin-right: 0px;
-    position: absolute;
-    margin-top: 120px;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-
-}
-
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 23%;
-    padding: 0 5px;
-}
-
-.row {
-    margin: 0 -5px;
-}
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: inline;
-        clear: both;
-    }
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #444;
-    color: white;
-}
-
-.fa {
-    font-size: 50px;
-}
-
-.collap{
-    margin-left: 750px;
-    margin-right: 90px;
-    position: absolute;
-    margin-top: 510px;
-    top: 0;
-      left: 0;
-      width: 40%;
-      height: 70%;
-      overflow: hidden;
-      z-index: 1;
-}
-
-
- 
-    </style>
+    
 <body>
  <!--Section Counter -->
     <!-- Earnings (Monthly) Card Example -->
@@ -115,7 +41,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Renewals</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">Kes 215,000</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">5,000</div>
                     </div>
                     <div class="col-auto">
                     <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -136,11 +62,7 @@
                         <div class="col-auto">
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                         </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                           <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                     <div class="col-auto">
@@ -164,9 +86,7 @@
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                         </div>
                         <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <!--<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
-                          </div>
+                          
                         </div>
                       </div>
                     </div>

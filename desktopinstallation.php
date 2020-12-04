@@ -95,66 +95,66 @@ padding-bottom: 20px;
 </style>
 </head>
 <body>
-
-
-
-<div class="container ">
-<div class="table-responsive">
-  
-  <div class="row">
-    
-    <div class="columnz">
-      <form action="insert.php">
-    
-        <input type="text" id="cname" name="customer" placeholder=" Name01">
-       
-        <input type="text" id="registration" name="reg" placeholder=" Registration">
-        
-        <input type="text" id="make" name="make" placeholder=" make">
-
-        
-        
-        <select id="serial" name="install" >
-           <option value="" disabled selected>Serial</option>
-
-           
-        </select>
-        
-        <select id="service" name="INSATALLATION" >
-          <option value="New Installation"> New Installation</option>
-
-          
-          
-        </select>
-        
-      </form>
+<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
+    <form>
+  <div class="form-row mt-4 pl-5">
+    <div class="col-5 mb-2 ml-5" >
+      <input type="text" class="form-control" placeholder="Name">
     </div>
-    <div class="column">
-      <form action="/action_page.php">
-       
-        <input type="text" id="contact" name="contact" placeholder=" Contact">
-        
-        <input type="text" id="chasis" name="chasis" placeholder=" Chasis">
-        
-        <input type="text" id="model" name="model" placeholder=" Model">
-
-        
-        <select id="technician" name="install">
-          <option value="" disabled selected> Technician</option>
-
-          
-         
-          
-        </select>
-        
-        <textarea id="comment" name="comment" placeholder="Write something.." style="height:100px"></textarea>
-       <button ><a href='edit.php'>Verify</a></button>
-      </form>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Contact">
     </div>
+    
   </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5">
+      <input type="text" class="form-control" placeholder="Registration">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Chasis">
+    </div>
+    
   </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5">
+      <input type="text" class="form-control" placeholder="Make">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Model">
+    </div>
+    
+  </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5 form-group">
+    <select class="form-control" name="serial" >
+      <option value="" disabled selected>Serial</option>
+    </select>
+     
+    
+      
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Technician">
+    </div>
+</div>
+<div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5 ">
+      <input type="text" class="form-control" placeholder="New Installation">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Comment">
+    </div>
+</div>
+    <div class="col-3 mb-2 mt-2 ml-5 mx-auto">
+      <input type="submit" class="form-control bg-success text-white" placeholder="Comment">
+    </div>
+</form>
+
 </div>
 
+
+
+  
 
  </body>
  </html>

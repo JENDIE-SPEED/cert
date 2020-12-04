@@ -106,7 +106,7 @@ padding-bottom: 20px;
     <div class="columnz">
       <form action="insert.php">
     
-        <input type="text" id="cname" name="customer" placeholder=" Name">
+        <input type="text" id="cname" name="customer" placeholder=" Name01">
        
         <input type="text" id="registration" name="reg" placeholder=" Registration">
         

@@ -146,7 +146,9 @@ padding-bottom: 20px;
     </div>
 </div>
     <div class="col-3 mb-2 mt-2 ml-5 mx-auto">
-      <input type="submit" class="form-control bg-success text-white" placeholder="Comment">
+    <li class="nav-item  btn btn-success btn-rounded btn-sm my-0 .px-2 ">
+       <a class="" href="edit.php">Submit</a>
+     </li>
     </div>
 </form>
 

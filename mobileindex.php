@@ -46,14 +46,14 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><?php
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">RENEWALS</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?php
                               include 'db.php'; 
                               $result = mysqli_query($conn, "SELECT * FROM work where problem='RENEWAL'");
                               $count=mysqli_num_rows($result);
                               echo $count;
                               
                               ?></div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                     <i class="fas fa-calendar fa-2x text-gray-300"></i>

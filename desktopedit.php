@@ -96,25 +96,25 @@ padding-bottom: 20px;
 </head>
 <body>
 <div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
-<table class="table table-dark">
-  <thead>
+<table class="table table-bordered ">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Contact</th>
       <th scope="col">Edit</th>
       
     </tr>
-  </thead>
+  </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td>Mark</td>
-      <td>Otto</td>
+      <td><span id="name"></span></td>
+      <td><span id="contact"></span></td>
       <td><button>Edit</button></td>
     </tr>
    </tbody>
 
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Registration</th>
@@ -125,30 +125,30 @@ padding-bottom: 20px;
   </thead>
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
+      <td><span id="registration"></span></td>
+      <td><span id="chasis"></span></td>
       <td><button>Edit</button></td>
       
     </tr>
    </tbody>
-   <thead>
+   <thead class="thead-dark">
     <tr>
       <th scope="col">Make</th>
       <th scope="col">Model</th>
       <th scope="col">Edit</th>
       
     </tr>
-  </thead>
+  </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td>Mark</td>
-      <td>Otto</td>
+      <td><span id="make"></span></td>
+      <td><span id="model"></span></td>
       <td><button>Edit</button></td>
     </tr>
    </tbody>
 
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Serial</th>
@@ -159,13 +159,13 @@ padding-bottom: 20px;
   </thead>
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
+       <td><span id="serial"></span></td>
+      <td><span id="technician"></span></td>
       <td><button>Edit</button></td>
       
     </tr>
    </tbody>
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Installation</th>
@@ -173,11 +173,11 @@ padding-bottom: 20px;
       <th scope="col">Edit</th>
       
     </tr>
-  </thead>
+  </thead >
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
+      <td><span id="installation"></span></td>
+      <td><span id="comment"></span></td>
       <td><button>Edit</button></td>
       
     </tr>
@@ -191,6 +191,23 @@ padding-bottom: 20px;
 <button>Submit</buttom>
 
 </div>
+
+<script>
+         document.getElementById("name").innerHTML=localStorage.getItem("namevalue");
+         document.getElementById("contact").innerHTML=localStorage.getItem("contactvalue");
+         document.getElementById("registration").innerHTML=localStorage.getItem("registrationvalue");
+         document.getElementById("chasis").innerHTML=localStorage.getItem("chasisvalue");
+         document.getElementById("make").innerHTML=localStorage.getItem("makevalue");
+         document.getElementById("model").innerHTML=localStorage.getItem("modelvalue");
+         document.getElementById("serial").innerHTML=localStorage.getItem("serialvalue");
+         document.getElementById("technician").innerHTML=localStorage.getItem("techlvalue");
+         document.getElementById("installation").innerHTML=localStorage.getItem("installvalue");
+         document.getElementById("comment").innerHTML=localStorage.getItem("commentvalue");
+         
+   
+   
+
+    </script>
 
 
 

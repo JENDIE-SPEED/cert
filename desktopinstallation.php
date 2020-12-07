@@ -96,37 +96,37 @@ padding-bottom: 20px;
 </head>
 <body>
 <div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
-    <form>
+    <form action="edit.php">
   <div class="form-row mt-4 pl-5">
     <div class="col-5 mb-2 ml-5" >
-      <input type="text" class="form-control" placeholder="Name">
+      <input type="text" class="form-control" placeholder="Name" id="name">
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Contact">
+      <input type="text" class="form-control" placeholder="Contact" id="contact">
     </div>
     
   </div>
   <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5">
-      <input type="text" class="form-control" placeholder="Registration">
+      <input type="text" class="form-control" placeholder="Registration" id="regis">
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Chasis">
+      <input type="text" class="form-control" placeholder="Chasis" id="chasis">
     </div>
     
   </div>
   <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5">
-      <input type="text" class="form-control" placeholder="Make">
+      <input type="text" class="form-control" placeholder="Make" id="make">
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Model">
+      <input type="text" class="form-control" placeholder="Model" id="model">
     </div>
     
   </div>
   <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5 form-group">
-    <select class="form-control" name="serial" >
+    <select class="form-control" name="serial" id="serial" >
       <option value="" disabled selected>Serial</option>
     </select>
      
@@ -134,25 +134,68 @@ padding-bottom: 20px;
       
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Technician">
+      <input type="text" class="form-control" placeholder="Technician" id="tech">
     </div>
 </div>
 <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5 ">
-      <input type="text" class="form-control" placeholder="New Installation">
+      <input type="text" class="form-control" placeholder="New Installation" id="ins">
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Comment">
+      <input type="text" class="form-control" placeholder="Comment" id="comment">
     </div>
 </div>
-    <div class="col-3 mb-2 mt-2 ml-5 mx-auto">
-    <li class="nav-item  btn btn-success btn-rounded btn-sm my-0 .px-2 ">
-       <a class="" href="edit.php">Submit</a>
-     </li>
+   <input type="submit" value="Submit" onclick="passvalues();"/>
     </div>
 </form>
 
 </div>
+
+
+<script>
+
+  function passvalues(){
+    let name=document.getElementById("name").value;
+    let contact=document.getElementById("contact").value;
+    let registration=document.getElementById("regis").value;
+    let chasis=document.getElementById("chasis").value;
+    let makeCar=document.getElementById("make").value;
+    let modelCar=document.getElementById("model").value;
+    let serialCar=document.getElementById("serial").value;
+    let tech=document.getElementById("tech").value;
+    let installation=document.getElementById("ins").value;
+    let comment=document.getElementById("comment").value;
+
+    localStorage.setItem("namevalue",name);
+    localStorage.setItem("contactvalue",contact);
+    localStorage.setItem("registrationvalue",registration);
+    localStorage.setItem("chasisvalue",chasis);
+    localStorage.setItem("makevalue",makeCar);
+    localStorage.setItem("modelvalue",modelCar);
+    localStorage.setItem("serialvalue",serialCar);
+    localStorage.setItem("techvalue",tech);
+    localStorage.setItem("installvalue",installation);
+    localStorage.setItem("commentvalue",comment);
+
+    return false;
+  };
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        
+</script>
 
 
 

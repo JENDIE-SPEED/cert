@@ -95,7 +95,7 @@ padding-bottom: 20px;
 </style>
 </head>
 <body>
-<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
+<div class="container p-4 mb-2 bg-secondary text-white pl-5 pr-2 col-6 " style="overflow-y: scroll" >
 <h1>Edit Data click on text </h1>
 
 <table class="table table-bordered ">
@@ -186,11 +186,14 @@ padding-bottom: 20px;
 
    </tbody>
 
+  
 
-    
+
 
 </table>
-<button>Submit</buttom>
+<button style >Submit</buttom> 
+
+
 
 </div>
 

@@ -6,7 +6,7 @@ $detect = new Mobile_Detect();
 // Check for any mobile device.
 if ($detect->isMobile()){
   include 'mobileheader.php' ;
-   include 'mobileinstallation.php';
+   include 'mobileedit.php';
    
 
    

@@ -9,7 +9,7 @@
  </head>
  <body>
 
-<style>
+ 	<style>
   body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,7 +43,14 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* Style the container/contact section */
 
+
+
+
+
+
+/* Create two columns that float next to eachother */
 .column {
   
   float: right;
@@ -56,8 +63,8 @@ input[type=submit]:hover {
 
   .container {
   position: absolute;
-  margin-left:10px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 200px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #444;
   border-radius: 5px;
@@ -88,62 +95,111 @@ padding-bottom: 20px;
 </style>
 </head>
 <body>
-
-
-
-<div class="container ">
-<div class="table-responsive">
-  
-  <div class="row">
-    
-    <div class="columnz">
-      <form action="insert.php">
-    
-        <input type="text" id="cname" name="customer" placeholder=" Name">
-       
-        <input type="text" id="registration" name="reg" placeholder=" Registration">
-        
-        <input type="text" id="make" name="make" placeholder=" make">
-        
-        <select id="serial" name="serial" >
-           <option value="" disabled selected>Serial</option>
-          <option value="002151556541">01111112000</option>
-          <option value="2154884100">011551555100</option>
-          <option value="62446261515">02151188940</option>
-        </select>
-        
-        <select id="service" name="INSATALLATION" >
-          <option value="New Installation"> New Installation</option>
-          
-        </select>
-        
-      </form>
+<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
+    <form action="edit.php">
+  <div class="form-row mt-4 pl-5">
+    <div class="col-5 mb-2 ml-5" >
+      <input type="text" class="form-control" placeholder="Name" id="name">
     </div>
-    <div class="column">
-      <form action="/action_page.php">
-       
-        <input type="text" id="contact" name="contact" placeholder=" Contact">
-        
-        <input type="text" id="chasis" name="chasis" placeholder=" Chasis">
-        
-        <input type="text" id="model" name="model" placeholder=" Model">
-
-        
-        <select id="tech" name="tech">
-          <option value="" disabled selected> Technician</option>
-          <option value="Maina"></option>
-          <option value="naima"></option>
-          <option value="iman"></option>
-        </select>
-        
-        <textarea id="comment" name="comment" placeholder="Write something.." style="height:100px"></textarea>
-        <input type="submit" value="Verify">
-      </form>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Contact" id="contact">
     </div>
+    
   </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5">
+      <input type="text" class="form-control" placeholder="Registration" id="regis">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Chasis" id="chasis">
+    </div>
+    
   </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5">
+      <input type="text" class="form-control" placeholder="Make" id="make">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Model" id="model">
+    </div>
+    
+  </div>
+  <div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5 form-group">
+    <select class="form-control" name="serial" id="serial" >
+      <option value="" disabled selected>Serial</option>
+    </select>
+     
+    
+      
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Technician" id="tech">
+    </div>
+</div>
+<div class="form-row pl-5">
+    <div class="col-5 mb-2 ml-5 ">
+      <input type="text" class="form-control" placeholder="New Installation" id="ins">
+    </div>
+    <div class="col-5 mb-2">
+      <input type="text" class="form-control" placeholder="Comment" id="comment">
+    </div>
+</div>
+   <input type="submit" value="Submit" onclick="passvalues();"/>
+    </div>
+</form>
+
 </div>
 
+
+<script>
+
+  function passvalues(){
+    let name=document.getElementById("name").value;
+    let contact=document.getElementById("contact").value;
+    let registration=document.getElementById("regis").value;
+    let chasis=document.getElementById("chasis").value;
+    let makeCar=document.getElementById("make").value;
+    let modelCar=document.getElementById("model").value;
+    let serialCar=document.getElementById("serial").value;
+    let tech=document.getElementById("tech").value;
+    let installation=document.getElementById("ins").value;
+    let comment=document.getElementById("comment").value;
+
+    localStorage.setItem("namevalue",name);
+    localStorage.setItem("contactvalue",contact);
+    localStorage.setItem("registrationvalue",registration);
+    localStorage.setItem("chasisvalue",chasis);
+    localStorage.setItem("makevalue",makeCar);
+    localStorage.setItem("modelvalue",modelCar);
+    localStorage.setItem("serialvalue",serialCar);
+    localStorage.setItem("techvalue",tech);
+    localStorage.setItem("installvalue",installation);
+    localStorage.setItem("commentvalue",comment);
+
+    return false;
+  };
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        
+</script>
+
+
+
+  
 
  </body>
  </html>

@@ -96,89 +96,91 @@ padding-bottom: 20px;
 </head>
 <body>
 <div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
-<table class="table table-dark">
-  <thead>
+<h1>Edit Data click on text </h1>
+
+<table class="table table-bordered ">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Contact</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
-  </thead>
+  </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="name"></span></td>
+      <td contenteditable="true"><span id="contact"></span></td>
+     
     </tr>
    </tbody>
 
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Registration</th>
       <th scope="col">Chasis</th>
-      <th scope="col">Edit</th>
+      
       
     </tr>
   </thead>
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="registration" ></span></td>
+      <td contenteditable="true"><span id="chasis" ></span></td>
+   
       
     </tr>
    </tbody>
-   <thead>
+   <thead class="thead-dark">
     <tr>
       <th scope="col">Make</th>
       <th scope="col">Model</th>
-      <th scope="col">Edit</th>
+    
       
     </tr>
-  </thead>
+  </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="make"></span></td>
+      <td contenteditable="true"><span id="model"></span></td>
+     
     </tr>
    </tbody>
 
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Serial</th>
       <th scope="col">Technician</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
   </thead>
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
-      <td><button>Edit</button></td>
+       <td contenteditable="true"><span id="serial"></span></td>
+      <td contenteditable="true"><span id="technician"></span></td>
+      
       
     </tr>
    </tbody>
-   <thead>
+   <thead class="thead-dark">
     <tr>
      
       <th scope="col">Installation</th>
       <th scope="col">Comment</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
-  </thead>
+  </thead >
   <tbody>
     <tr>
-    <td>Mark</td>
-      <td>Otto</td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="installation"></span></td>
+      <td contenteditable="true"><span id="comment"></span></td>
+      
       
     </tr>
 
@@ -191,6 +193,23 @@ padding-bottom: 20px;
 <button>Submit</buttom>
 
 </div>
+
+<script>
+         document.getElementById("name").innerHTML=localStorage.getItem("namevalue");
+         document.getElementById("contact").innerHTML=localStorage.getItem("contactvalue");
+         document.getElementById("registration").innerHTML=localStorage.getItem("registrationvalue");
+         document.getElementById("chasis").innerHTML=localStorage.getItem("chasisvalue");
+         document.getElementById("make").innerHTML=localStorage.getItem("makevalue");
+         document.getElementById("model").innerHTML=localStorage.getItem("modelvalue");
+         document.getElementById("serial").innerHTML=localStorage.getItem("serialvalue");
+         document.getElementById("technician").innerHTML=localStorage.getItem("techlvalue");
+         document.getElementById("installation").innerHTML=localStorage.getItem("installvalue");
+         document.getElementById("comment").innerHTML=localStorage.getItem("commentvalue");
+         
+   
+   
+
+    </script>
 
 
 

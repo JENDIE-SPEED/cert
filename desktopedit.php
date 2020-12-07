@@ -96,21 +96,23 @@ padding-bottom: 20px;
 </head>
 <body>
 <div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
+<h1>Edit Data click on text </h1>
+
 <table class="table table-bordered ">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Contact</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
   </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td><span id="name"></span></td>
-      <td><span id="contact"></span></td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="name"></span></td>
+      <td contenteditable="true"><span id="contact"></span></td>
+     
     </tr>
    </tbody>
 
@@ -119,15 +121,15 @@ padding-bottom: 20px;
      
       <th scope="col">Registration</th>
       <th scope="col">Chasis</th>
-      <th scope="col">Edit</th>
+      
       
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span id="registration"></span></td>
-      <td><span id="chasis"></span></td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="registration" ></span></td>
+      <td contenteditable="true"><span id="chasis" ></span></td>
+   
       
     </tr>
    </tbody>
@@ -135,16 +137,16 @@ padding-bottom: 20px;
     <tr>
       <th scope="col">Make</th>
       <th scope="col">Model</th>
-      <th scope="col">Edit</th>
+    
       
     </tr>
   </thead class="thead-dark">
   <tbody>
     <tr>
       
-      <td><span id="make"></span></td>
-      <td><span id="model"></span></td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="make"></span></td>
+      <td contenteditable="true"><span id="model"></span></td>
+     
     </tr>
    </tbody>
 
@@ -153,15 +155,15 @@ padding-bottom: 20px;
      
       <th scope="col">Serial</th>
       <th scope="col">Technician</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
   </thead>
   <tbody>
     <tr>
-       <td><span id="serial"></span></td>
-      <td><span id="technician"></span></td>
-      <td><button>Edit</button></td>
+       <td contenteditable="true"><span id="serial"></span></td>
+      <td contenteditable="true"><span id="technician"></span></td>
+      
       
     </tr>
    </tbody>
@@ -170,15 +172,15 @@ padding-bottom: 20px;
      
       <th scope="col">Installation</th>
       <th scope="col">Comment</th>
-      <th scope="col">Edit</th>
+     
       
     </tr>
   </thead >
   <tbody>
     <tr>
-      <td><span id="installation"></span></td>
-      <td><span id="comment"></span></td>
-      <td><button>Edit</button></td>
+      <td contenteditable="true"><span id="installation"></span></td>
+      <td contenteditable="true"><span id="comment"></span></td>
+      
       
     </tr>
 

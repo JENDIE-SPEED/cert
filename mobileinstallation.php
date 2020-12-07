@@ -1,160 +1,90 @@
-<!DOCTYPE html>
- <html>
- <head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- 	<title>Jendie</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Installation</title>
+  </head>
+  <body>
+  <div class="container row">
+  <form action="edit.php">
+  <div class="form-group">
    
- </head>
- <body>
-
- 	<style>
-  body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-label{
-	color: white;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-
-
-
-
-
-
-/* Create two columns that float next to eachother */
-.column {
-  
-  float: right;
-  width: 50%;
-  margin-top: 6px;
-  padding-bottom: 20px;
-
-
-}
-
-  .container {
-  position: absolute;
-  margin-left: 300px;
-  margin-right: 200px;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #444;
-  border-radius: 5px;
-  margin-top: 120px;
-
-
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 70%;
-      overflow: hidden;
-      z-index: 1;
- 
-  
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.columnz {
-
-float: left;
-width: 50%;
-margin-top: 6px;
-padding-bottom: 20px;
-}
-</style>
-</head>
-<body>
-<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
-    <form action="edit.php">
-  <div class="form-row mt-4 pl-5">
-    <div class="col-5 mb-2 ml-5" >
-      <input type="text" class="form-control" placeholder="Name" id="name">
-    </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Contact" id="contact">
-    </div>
+    <input type="text" id="name" class="form-control mx-sm-3" placeholder="Name">
     
   </div>
-  <div class="form-row pl-5">
-    <div class="col-5 mb-2 ml-5">
-      <input type="text" class="form-control" placeholder="Registration" id="regis">
-    </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Chasis" id="chasis">
-    </div>
+  <div class="form-group">
+   
+    <input type="text" id="contact" class="form-control mx-sm-3" placeholder="Contact">
     
   </div>
-  <div class="form-row pl-5">
-    <div class="col-5 mb-2 ml-5">
-      <input type="text" class="form-control" placeholder="Make" id="make">
-    </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Model" id="model">
-    </div>
+  <div class="form-group">
+   
+    <input type="text" id="regis" class="form-control mx-sm-3" placeholder="Registration">
     
   </div>
-  <div class="form-row pl-5">
-    <div class="col-5 mb-2 ml-5 form-group">
-    <select class="form-control" name="serial" id="serial" >
-      <option value="" disabled selected>Serial</option>
-    </select>
-     
+  <div class="form-group">
+   
+    <input type="text" id="chasis" class="form-control mx-sm-3" placeholder="Chasis">
     
-      
-    </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Technician" id="tech">
-    </div>
-</div>
-<div class="form-row pl-5">
-    <div class="col-5 mb-2 ml-5 ">
-      <input type="text" class="form-control" placeholder="New Installation" id="ins">
-    </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Comment" id="comment">
-    </div>
-</div>
+  </div>
+  <div class="form-group">
+   
+    <input type="text" id="make" class="form-control mx-sm-3" placeholder="Make">
+    
+  </div>
+
+  <div class="form-group">
+   
+    <input type="text" id="model" class="form-control mx-sm-3" placeholder="Model">
+    
+  </div>
+  <div class="form-group">
+   
+    <input type="text" id="serial" class="form-control mx-sm-3" placeholder="Serial">
+    
+  </div>
+  <div class="form-group">
+   
+    <input type="text" id="tech" class="form-control mx-sm-3" placeholder="Technician">
+    
+  </div>
+  <div class="form-group">
+   
+    <input type="text" id="ins" class="form-control mx-sm-3" placeholder="Installation">
+    
+  </div>
+  <div class="form-group">
+   
+    <input type="text" id="comment" class="form-control mx-sm-3" placeholder="Comment">
+    
+  </div>
    <input type="submit" value="Submit" onclick="passvalues();"/>
-    </div>
 </form>
+    
 
-</div>
 
+<div>
 
-<script>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-  function passvalues(){
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+    <script>
+        
+        function passvalues(){
     let name=document.getElementById("name").value;
     let contact=document.getElementById("contact").value;
     let registration=document.getElementById("regis").value;
@@ -179,28 +109,10 @@ padding-bottom: 20px;
 
     return false;
   };
-    
+   
+   
 
+    </script>
 
-
-
-
-
-
-
-
-
-
-
-
-       
-        
-</script>
-
-
-
-  
-
- </body>
- </html>
- 
+  </body>
+</html>

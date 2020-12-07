@@ -12,7 +12,7 @@
   </head>
   <body>
   <h3>Confirm,Edit and Submit</h3>
-  <div class="container row">
+  <div class="container row bg-light">
     <table class="table col-12 table-bordered">
  
   <thead class="thead-dark">

@@ -95,10 +95,10 @@ padding-bottom: 20px;
 </style>
 </head>
 <body>
-<div class="container p-4 mb-2 bg-secondary text-white pl-5 pr-2 col-6 " style="overflow-y: scroll" >
+<div class="container  bg-secondary text-white col-5 " >
 <h1>Edit Data click on text </h1>
 
-<table class="table table-bordered ">
+<table class="table table-bordered table-sm  ">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>

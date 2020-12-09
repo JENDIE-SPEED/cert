@@ -95,7 +95,7 @@ padding-bottom: 20px;
 </style>
 </head>
 <body>
-<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-6" >
+<div class="container p-1 mb-2 bg-secondary text-white pl-5 pr-2 col-5" >
     <form action="edit.php">
   <div class="form-row mt-4 pl-5">
     <div class="col-5 mb-2 ml-5" >
@@ -128,18 +128,29 @@ padding-bottom: 20px;
     <div class="col-5 mb-2 ml-5 form-group">
     <select class="form-control" name="serial" id="serial" >
       <option value="" disabled selected>Serial</option>
-    </select>
+      <option value="seri1">000001223320</option>
+      <option value="seri2">03424928982</option>
+      <option value="seri3">09929482849</option>
+      <option value="ser4">00988424483</option>
+        </select>
      
     
       
     </div>
     <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Technician" id="tech">
+    <select class="form-control" name="serial" id="tech"  >
+      <option value="" disabled selected>Technician</option>
+      <option value="tech1">John</option>
+      <option value="tech1">Maya</option>
+      <option value="tech2">Saint</option>
+      <option value="tech3">Khool</option>
+        </select>
+      
     </div>
 </div>
 <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5 ">
-      <input type="text" class="form-control" placeholder="New Installation" id="ins">
+      <input type="text" class="form-control" placeholder="New Installation" value="New Installation" id="ins">
     </div>
     <div class="col-5 mb-2">
       <input type="text" class="form-control" placeholder="Comment" id="comment">

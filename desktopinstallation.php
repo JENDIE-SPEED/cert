@@ -4,8 +4,8 @@
 
  	<title>Jendie</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/bootstrap-responsive.css">
-   
+  <!-- <link rel="stylesheet" href="css/bootstrap-responsive.css"> -->
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
  </head>
  <body>
 
@@ -127,14 +127,61 @@ padding-bottom: 20px;
   <div class="form-row pl-5">
     <div class="col-5 mb-2 ml-5 form-group">
     <select class="form-control" name="serial" id="serial" >
-      <option value="" disabled selected>Serial</option>
-    </select>
+    <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "fetch_serial.php", true);
+    ajax.send();
+ 
+    ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            console.log(data);
+ 
+            var html = "";
+            for(var a = 0; a < data.length; a++) {
+                var serial = data[a].serial;
+                
+ 
+                
+                    html += "<option value="+ serial + ">" + serial + "</option>";
+                    
+                
+            }
+            document.getElementById("serial").innerHTML += html;
+        }
+    };
+</script>
      
-    
+</select>
       
     </div>
-    <div class="col-5 mb-2">
-      <input type="text" class="form-control" placeholder="Technician" id="tech">
+    <div class="col-5 mb-2 ml-5 form-group">
+    <select class="form-control" name="tech" id="tech" >
+      <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "fetch_tech.php", true);
+    ajax.send();
+ 
+    ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            console.log(data);
+ 
+            var html = "";
+            for(var a = 0; a < data.length; a++) {
+                var first_name = data[a].first_name;
+                var second_name = data[a].second_name;
+ 
+                
+                    html += "<option value="+ first_name + " "+second_name+ " >" + first_name +" "+second_name+ "</option>";
+                    
+                
+            }
+            document.getElementById("tech").innerHTML += html;
+        }
+    };
+</script>
+    </select>
     </div>
 </div>
 <div class="form-row pl-5">

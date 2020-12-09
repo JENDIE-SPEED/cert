@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <title>Installation</title>
   </head>
   <body>
@@ -50,9 +50,32 @@
     
   </div>
   <div class="form-group">
-   
-    <input type="text" id="tech" class="form-control mx-sm-3" placeholder="Technician">
-    
+  <select class="form-control" name="tech" id="tech" >
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "fetch_location.php", true);
+    ajax.send();
+ 
+    ajax.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText);
+            console.log(data);
+ 
+            var html = "";
+            for(var a = 0; a < data.length; a++) {
+                var location = data[a].location;
+                
+ 
+                
+                    html += "<option value="+ location +"disabled selected >" + location + "</option>";
+                    
+                
+            }
+            document.getElementById("tech").innerHTML += html;
+        }
+    };
+</script>
+    </select>
   </div>
   <div class="form-group">
    

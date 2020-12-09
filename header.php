@@ -264,20 +264,62 @@ ul ul a {
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
+                        <?php
+                        if ($role=='accounts') {
+                            # code...
+                            ?>
+                            
+                        
+                        
+                        <li class="nav-item  btn btn-info btn-rounded btn-sm my-0 .px-2 ">
+                            <a class="nav-link" href="headeraccount.php">Accounts</a>
+                        </li>
+                        <li class="nav-item btn ">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item  btn btn-danger btn-rounded btn-sm my-0">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        <?php
+                        } elseif ($role=='super admin') {
+                            # code...
+                            ?>
                             <li class="nav-item btn btn-success btn-rounded btn-sm my-0  mr-3">
-                                <a class="nav-link" href="index.php">Home</a>
-                            </li>
-                            
-                            
-                            <li class="nav-item  btn btn-info btn-rounded btn-sm my-0 .px-2 ">
-                                <a class="nav-link" href="headeraccount.php">Accounts</a>
-                            </li>
-                            <li class="nav-item btn ">
-                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-                            </li>
-                            <li class="nav-item  btn btn-danger btn-rounded btn-sm my-0">
-                                <a class="nav-link" href="#">Logout</a>
-                            </li>
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        
+                        
+                        <li class="nav-item  btn btn-info btn-rounded btn-sm my-0 .px-2 ">
+                            <a class="nav-link" href="headeraccount.php">Accounts</a>
+                        </li>
+                        <li class="nav-item btn ">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item  btn btn-danger btn-rounded btn-sm my-0">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        <?php
+                        }
+                        else {
+                            # code...
+                            ?>
+                            <li class="nav-item btn btn-success btn-rounded btn-sm my-0  mr-3">
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item btn ">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item  btn btn-danger btn-rounded btn-sm my-0">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                        <?php
+                        }
+                        
+                        ?>
+                           
                         </ul>
                     </div>
                 </div>
